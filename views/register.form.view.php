@@ -1,9 +1,9 @@
 <?php
-require './views/partials/head.php';
+require './partials/head.php';
 if(isset($warning)) echo $warning;
 ?>
 
-<form method="post" action = "/register/">
+<form method="post" action = "registered.view.php">
     
     <p>
     <label for="first_name">Etunimi </label><br>
@@ -37,7 +37,6 @@ if(isset($warning)) echo $warning;
     <p>
     <input class="button" type="submit" value="Rekisteröidy">
     </p>
-    
     </form> 
 
 

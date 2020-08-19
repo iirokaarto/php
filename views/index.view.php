@@ -1,5 +1,5 @@
 <?php
-require './views/partials/head.php';
+require 'partials/head.php';
 
 if(isset($message)) echo $message;
 
@@ -16,5 +16,5 @@ if(!empty($stories)) {
     }
 }
 
-require './views/partials/end.php';
+require 'partials/end.php';
 ?>

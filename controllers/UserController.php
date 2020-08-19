@@ -1,6 +1,6 @@
 <?php
 
-require './database/models/User.php'; // user management for authentication
+require 'database/models/User.php'; // user management for authentication
 
 class UserController
 {
@@ -25,10 +25,11 @@ class UserController
             $password = password_hash($password, PASSWORD_DEFAULT);
     
             $newAccount=$this->user->addAccount($last_name,$first_name,$account_name,$password);
-            require './views/registered.view.php';
+            echo $newAccount;
+            require '../views/registered.view.php';
         } else {
             $message ="Tarkista salasanat";
-            require './views/registerform.view.php';
+            require '../views/register.form.view.php';
         }
     }
 }

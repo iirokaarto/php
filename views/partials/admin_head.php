@@ -6,7 +6,7 @@
 <meta name="keywords" content="sivukoe, CSS3, HTML5">
 <meta name="author" content="Leena Järvenkylä-Niemi">
 <meta name="description" content="Vieraskirja">
-<link rel="stylesheet" type="text/css" href="<?= "/public/css/style.css" ?>">
+<link rel="stylesheet" type="text/css" href="<?= "/public/css/styles.css" ?>">
 </head>
 <body>
 <header>

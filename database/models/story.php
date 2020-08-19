@@ -1,5 +1,5 @@
 <?php
-require './database/db.php';
+
 
 class Story 
 {
@@ -81,15 +81,14 @@ class Story
             $statement = $db->prepare("SELECT * FROM users WHERE account_id");
             $statement->execute();
                 return $statement->fetchAll(PDO::FETCH_CLASS);
-    
-    }
+        }
 
     catch (PDOException $e)
     {
-          /* Exception (SQL error) */
-          echo $e->getMessage();
-          return FALSE;
+     /* Exception (SQL error) */
+     echo $e->getMessage();
+      return FALSE;
     }    
-
+}
 }
 ?>

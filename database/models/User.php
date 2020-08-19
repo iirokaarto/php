@@ -1,4 +1,5 @@
 <?php
+require './database/db.php';
 // Modified from https://alexwebdevelop.com/user-authentication/
 class User {
     

@@ -1,4 +1,6 @@
 <?php
+
+
 require './Route.php'; // routing class
 require './database/db.php'; // database connection
 
@@ -20,7 +22,7 @@ Route::add('/story/(.*)',function($id) use ($storyController){
 },'get');
 
 Route::add('/register/',function() {
-    require './views/registerform.view.php';
+    require 'views/registerform.view.php';
 },'get');
 
 Route::add('/register/',function() use ($userController) {

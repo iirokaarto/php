@@ -1,11 +1,11 @@
 <?php
-require './views/partials/head.php';
+require 'partials/head.php';
 ?>
 
 Rekisteröinti onnistui, uusi ID on 
-<?= $newAccount ?>
+<?php echo $newAccount ?>
 
 
 <?php
-require './views/partials/end.php';
+require 'partials/end.php';
 ?>

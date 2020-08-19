@@ -1,6 +1,6 @@
 <?php
 
-require './database/models/story.php';
+require 'database/models/story.php';
 
 
 class StoryController 

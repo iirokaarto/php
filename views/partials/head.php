@@ -6,17 +6,17 @@
 <meta name="keywords" content="sivukoe, CSS3, HTML5">
 <meta name="author" content="Leena Järvenkylä-Niemi">
 <meta name="description" content="Vieraskirja">
-<link rel="stylesheet" type="text/css" href="<?= "/public/css/style.css" ?>">
+<link rel="stylesheet" type="text/css" href= "../public/css/styles.css">
 </head>
 <body>
 <header>
 
 <div id="kotisivulinkki">
-<a class="kotilinkki" href="/">Vieraskirja</a>
+<a class="kotilinkki" href="../../index.php">Vieraskirja</a>
 </div>
 
 <nav>
-<a class="navilinkki" href="/register/">rekisteröidy</a>
+<a class="navilinkki" href="../views/register.form.view.php">rekisteröidy</a>
 <a class="navilinkki" href="/login/">kirjaudu</a>
 </nav>
 
