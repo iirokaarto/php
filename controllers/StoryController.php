@@ -26,10 +26,14 @@ class StoryController
     public static function deleteStory($id,$user)
     {
         if(Story::delete_story($id)) $message = "juttu on poistettu";
-        else $message="jutun poistaminen ei onnistu"
+        else $message="jutun poistaminen ei onnistu";
+    }
 // view
+    public static function readstoriesById()
+    {
     $account_id = $user->getId();
     $stories = Story::get_stories_by_id($account_id);
+    require './views/index.view.php';
 
     }
     

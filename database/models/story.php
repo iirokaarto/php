@@ -56,5 +56,40 @@ class Story
           return FALSE;
         }
     }
+    public static function readstoriesById()
+    {
+        global $db;
+        
+        try  {
+            $statement = $db->prepare("SELECT * FROM stories WHERE account_id = ?");
+            $statement->execute(array($id));
+                    return $statement->fetchAll(PDO::FETCH_CLASS);
+        }
+    
+        catch (PDOException $e)
+        {
+          /* Exception (SQL error) */
+          echo $e->getMessage();
+          return FALSE;
+        }
+    }
+    public static function getId()
+    {
+        global $db;
+        
+        try {
+            $statement = $db->prepare("SELECT * FROM users WHERE account_id");
+            $statement->execute();
+                return $statement->fetchAll(PDO::FETCH_CLASS);
+    
+    }
+
+    catch (PDOException $e)
+    {
+          /* Exception (SQL error) */
+          echo $e->getMessage();
+          return FALSE;
+    }    
+
 }
 ?>
