@@ -1,0 +1,7 @@
+Options -Indexes -MultiViews +FollowSymLinks
+RewriteEngine On
+
+RewriteBase /iiroproject/php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [QSA]
